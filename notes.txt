@@ -1,0 +1,30 @@
+Programming language
+----------------------
+it is a set of rules and syntax used to write code that a computer can understand.
+ex: py, java, c, c#, c++, ruby, JavaScript.
+
+JavaScript
+------------
+
+it is especially used to make web pages interactive. 
+it is a versatile and high level programming language.
+
+interactive--> JS allowing user to actively engage and communicate with a system.
+versatile---> frontend, backend, game, app...
+
+JS code will get executed only within browser. ex: chrome, MS edge, fire fox... 
+
+
+syntax 
+---------
+";"--> after every instruction.
+
+Extension for JS files ---> .js 
+console.log("I like you")
+
+
+Inserting JS into HTML
+-------------------------
+Using Script tag
+
+Developer Tools---> ctrl + shift + i
