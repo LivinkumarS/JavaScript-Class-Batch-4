@@ -27,4 +27,49 @@ Inserting JS into HTML
 -------------------------
 Using Script tag
 
-Developer Tools---> ctrl + shift + i
+Developer Tools---> ctrl + shift + i.
+
+
+typeOf value---> dataType of that value.
+
+Variables
+------------
+it is simply a container that stores data.
+
+keywords to create data
+------------------------
+1) var
+2) let 
+3) const 
+
+var, let ---> mutable (values van be changed.)
+const ---> immutable (values cannot be changed)
+
+DataTypes
+-------------
+Primitive DataTypes 
+------------------------
+Number--> Integer(whole numbers) and Float(1.2323,0.3435,-8.00)
+-------
+parseInt("4636").
+paseFloat("3.14rebge")
+num.toFixed(n).
+num.toString()
+num.charAt(n)
+num.slice(start, end)
+
+String--> '', "", ``. collection of characters.
+------
+str.length;
+str.toUpperCase();
+str.toLowerCase();
+str.includes("wo")
+
+Boolean--> true or false.
+undefined--> when the variable is create. but not assigned with a value.
+null--> intensional absence.
+
+
+
+Reference DataTypes 
+------------------------
