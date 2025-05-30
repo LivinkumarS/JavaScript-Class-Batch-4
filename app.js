@@ -27,17 +27,30 @@
 // console.log(b);
 // console.log(c);
 
-let str = "Hello world";
+// let str = "Hello world"   ;
 // console.log(str.length);
-let cap = str.toUpperCase();
-let low = str.toLowerCase();
+// let cap = str.toUpperCase();
+// let low = str.toLowerCase();
 // console.log(cap);
 // console.log(low);
 // console.log(str.includes("o w"));
 // console.log(str.charAt(4));
 
-console.log(cap.slice(1,9));
+// console.log(cap.slice(1,9));
 
+// let a = "hello";
+// let b = 60;
+
+// let ans = a + " " + b;
+
+// console.log(ans);
+
+// let fname = "Trisha";
+// let age = 22;
+
+// let ans="Hello "+ fname +". Your age is " + age;
+// let ans = `Hello ${fname}. Your age is ${age}.`;
+// console.log(ans);
 
 // Boolean
 

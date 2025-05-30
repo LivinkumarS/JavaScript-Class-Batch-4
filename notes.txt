@@ -63,7 +63,10 @@ String--> '', "", ``. collection of characters.
 str.length;
 str.toUpperCase();
 str.toLowerCase();
-str.includes("wo")
+str.includes("wo");
+
+Concatination---> attaching two strings. '+'
+Template Literals---> inserting variiables in a string(``)
 
 Boolean--> true or false.
 undefined--> when the variable is create. but not assigned with a value.
