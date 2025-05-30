@@ -95,3 +95,25 @@ Modulo--> %(reminder)
 Expo-> ** power 
 Increment ---> ++var(pre inc), var++(post inc)
 Decrement ---> --var(pre dec), var--(post dec)
+
+Assignment Operation
+---------------------
+
+= --> assignig value to variable.
++= --> inc and assign
+-= --> dec and assign
+*= --> mul and assign
+/= --> div and assign
+
+
+Comparison Operators (Results Boolean Values)
+---------------------
+
+Loose Equality--> "==" (only values matters)
+Strict Equality--> "==="(both datatype and value matter).
+Not Equal ---> != 
+
+greater than--> > 
+less than --> <
+greater than or equal to --> >=
+less than or equal to --> <=

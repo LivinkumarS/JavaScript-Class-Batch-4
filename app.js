@@ -1,32 +1,20 @@
-// Arithmetic Operations
-
+// Assignment operators
 // let a = 10;
-// let b = 21;
+// a += 20; //a=30
+// a -= 10; //a=20
+// a *= 2; //a=40
+// a /= 4; //a=10
+// console.log(a);
 
-// console.log(a + b);
-// console.log(a - b);
-// console.log(a * b);
-// console.log(a / b);
-// console.log(b % a);
-// console.log(2 ** 4);
+// Comparison Operators
 
-let i = 5;
+let a = -10;
+let b = 9;
 
-//let ans = ++i; //(increment first, assignment next)
-//let ans = i++; //(assignment first, increment next)
+// console.log(a != b);
+// console.log(++a > b);
+// console.log(a < b);
 
-// let ans = i++ + 2;
 
-// console.log("ans: " + ans);
-// console.log("i: " + i);
-
-//i->5,6,7
-
-// console.log(5 + 7);
-
-//i->5,6,7
-
-//console.log(6 + 6 + 6); //18
-//i--> 5,4,3
-console.log(4 + 4 - 4);  //4
-
+// console.log(a >= b);
+console.log(a <= b);
