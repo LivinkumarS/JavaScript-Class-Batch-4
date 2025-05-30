@@ -76,3 +76,22 @@ null--> intensional absence.
 
 Reference DataTypes 
 ------------------------
+
+
+
+
+
+Operations in JS.
+-------------------
+
+Arithmetic Operation 
+-------------------------
+
+Add--> +
+Sub--> -
+Mul--> *
+Div--> /
+Modulo--> %(reminder)
+Expo-> ** power 
+Increment ---> ++var(pre inc), var++(post inc)
+Decrement ---> --var(pre dec), var--(post dec)

@@ -1,70 +1,32 @@
-// const a = 10;
-// a = 20;
-// console.log(a);
+// Arithmetic Operations
 
-// Number
-// let a=10;
-// let b=10.78378;
-// console.log(b);
-// let str = "63483487hifgevfu";
-// let num = parseInt(str);
-// let str = "3.14hbsguug";
-// let num = parseFloat(str);
-// console.log(num);
-// console.log(typeof num);
-// let a = 8.4555644;
-// console.log(a.toFixed(5));
-// let str = a.toString();
-// console.log(str);
-// console.log(typeof str);
+// let a = 10;
+// let b = 21;
 
-// String
+// console.log(a + b);
+// console.log(a - b);
+// console.log(a * b);
+// console.log(a / b);
+// console.log(b % a);
+// console.log(2 ** 4);
 
-// let a = "I Would Like to Code";
-// let b = 'I Would Like to Code';
-// let c = `I Would Like to Code`;
-// console.log(a);
-// console.log(b);
-// console.log(c);
+let i = 5;
 
-// let str = "Hello world"   ;
-// console.log(str.length);
-// let cap = str.toUpperCase();
-// let low = str.toLowerCase();
-// console.log(cap);
-// console.log(low);
-// console.log(str.includes("o w"));
-// console.log(str.charAt(4));
+//let ans = ++i; //(increment first, assignment next)
+//let ans = i++; //(assignment first, increment next)
 
-// console.log(cap.slice(1,9));
+// let ans = i++ + 2;
 
-// let a = "hello";
-// let b = 60;
+// console.log("ans: " + ans);
+// console.log("i: " + i);
 
-// let ans = a + " " + b;
+//i->5,6,7
 
-// console.log(ans);
+// console.log(5 + 7);
 
-// let fname = "Trisha";
-// let age = 22;
+//i->5,6,7
 
-// let ans="Hello "+ fname +". Your age is " + age;
-// let ans = `Hello ${fname}. Your age is ${age}.`;
-// console.log(ans);
+//console.log(6 + 6 + 6); //18
+//i--> 5,4,3
+console.log(4 + 4 - 4);  //4
 
-// Boolean
-
-// let a=true
-// let b=false
-
-// console.log(a);
-// console.log(b);
-
-// undefined
-
-// let a;
-// console.log(a);
-
-// null
-// let a = null;
-// console.log(a);
