@@ -1,10 +1,8 @@
-// Conditional Clauses Task 
+let a = 4;
+// if (a > 5) {
+//   console.log("Greater");
+// } else {
+//   console.log("Lesser");
+// }
 
-// prompt mark 
-
-// 91,92..100--> console.log("A+");
-// 81,82...90 --> A
-// 71-80 ---> B+
-// 61-70 ---> B
-// 50-60 ---> C
-// <50 --> Fail
+a > 5 ? console.log("Greater") : console.log("Lesser");

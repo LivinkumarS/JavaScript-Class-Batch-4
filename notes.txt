@@ -147,4 +147,17 @@ syntax
 
 if(condition){
     // block of code
+}else  if {
+
+}else{
+
 }
+
+Ternary Operator 
+--------------------
+shorthand for if else
+
+syntax 
+----------
+
+expression ? command1 : command2
