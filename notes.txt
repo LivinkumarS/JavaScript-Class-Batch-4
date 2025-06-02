@@ -117,3 +117,34 @@ greater than--> >
 less than --> <
 greater than or equal to --> >=
 less than or equal to --> <=
+
+
+Logical Operator 
+-------------------
+Operaties with booleans and return a Boolean.
+
+AND---> (&&) If Both are true ---> true, else---> false
+OR----> (||) Any one has to be true--> true, both false---> false.
+NOT---> (!) inverting the value
+
+BODMAS--> Bracket, Of, Division, Multiplication, Add, Sub.
+
+
+
+Ternary operator 
+------------------
+
+
+
+
+Conditional Clauses (if, else, else if)
+----------------------
+
+usedto execute different blocks of code based on conditions.
+
+syntax
+----------
+
+if(condition){
+    // block of code
+}
