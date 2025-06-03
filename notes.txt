@@ -198,4 +198,25 @@ do... while loop
 
  for..in and for...of 
  ------------------------
- 
+
+
+
+Truthy and Falsy Values 
+--------------------------
+Truthy 
+-------
+true,
+numbers otherthan 0.
+non empty string.
+object {},
+array [].
+
+
+Falsy 
+------
+false,
+0,
+""(empty string),
+null,
+undefined,
+NaN
