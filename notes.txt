@@ -161,3 +161,41 @@ syntax
 ----------
 
 expression ? command1 : command2
+
+
+Loops in JS 
+-------------
+
+Repeats a block of code multiple times until the specified condition is met.
+
+For loop 
+-----------
+number of iteration is known.
+
+syntax 
+--------
+
+for(init ; condition; increment){
+    //block of code
+}
+
+While Loop 
+------------
+number of iteration is not known.
+
+syntax 
+-------
+while(condition){
+    //block of code
+}
+
+do... while loop 
+-------------------
+
+ do {
+    //block of code
+ } while (condition)
+
+ for..in and for...of 
+ ------------------------
+ 
