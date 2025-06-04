@@ -77,8 +77,45 @@ null--> intensional absence.
 Reference DataTypes 
 ------------------------
 
+Function
+------------
+function is a reusable block of code designed to perform a specific task.
+
+using(calling) (invoking)---> name()
+
+Types of functions 
+-----------------------
+
+named functions(function declaration)----> function name(){ //block of code }
+---> can be used before creating it.(Hoisting)
+
+Function Expression ----> const name = () = > {//block of code }
+--> Function is stored in a variable.
+--> not hoisted.
+
+Arrow Function ---> ()=>{//block of code}
+--> no name.
 
 
+Parameters and Arguments
+-----------------------------
+
+P--> variables listed in the function definition
+A--> actual values passed when calling the function.
+function add(a, b) {
+  console.log(a + b);
+}
+
+add(55, 45);
+add(155, 45);
+
+Return keyword in function----> ends function execution.
+                                can return avalue to function caller.
+
+Callback Functions and Higher order Functions.
+-------------------------------------------------
+
+cb--> a function that is passed as an argument to another function.
 
 
 Operations in JS.
@@ -220,3 +257,5 @@ false,
 null,
 undefined,
 NaN
+
+
