@@ -1,82 +1,40 @@
-// Named Function
+// Arrays
 
-// printName();
+// console.log(arr[10]);
+// console.log(arr.length);
 
-function printName() {
-  console.log("hello Guys");
-  console.log("This is");
-  console.log("Livinkumar S");
-  console.log("Here");
-}
+// arr.push("Navaneethan");
+// arr.pop();
+// arr.unshift("mango");
+// arr.shift();
+// arr.splice(3, 5, 43,32,56,324,56,"ety5553",true);
+// arr.splice(5, 3, "mango", "water melon", "papaya");
+// arr1.sort((x,y)=>{return y-x}); //desc
+// arr1.sort((js, py) => {
+//   return py - js;
+// }); //asc
 
-// Function Expression
+let arr = [
+  "apple",
+  "orange",
+  "banana",
+  "grapes",
+  "pineapple",
+  1,
+  2,
+  3,
+  true,
+  false,
+  true,
+];
 
-const printAge = () => {
-  console.log("My age is");
-  console.log(82);
-};
+let arr1 = [34, 324, 234, 56, 234, 356, 324, 356, 324];
 
-const printHello = () => {
-  console.log("Hello");
-};
+// let newArr = arr.concat(arr1);
+// let newArr = arr.slice(0, 7);
+// let str = arr.join();
+//console.log(arr.indexOf(true)); //-1
+console.log(arr.includes(arr[5] > arr[6])); //true
 
-// for (let i = 0; i < 10; i++) {
-//   printHello();
-// }
-
-function add(a, b) {
-  console.log(a + b);
-}
-
-// add(55, 45);
-// add(155, 45);
-
-const startProcess = (a) => {
-  console.log("Started!");
-  console.log("Step1");
-  console.log("Step2");
-
-  if (a <= 10) {
-    return;
-  }
-
-  console.log("Step3");
-  console.log("Step4");
-  console.log("Step5");
-  console.log("Ended");
-};
-
-// startProcess(11);
-
-function mul(a, b) {
-  let ans = a * b; //100
-  return ans; //100
-}
-
-// console.log(mul(10, 10) + 100 - 200);
-
-function sayHi(name) {
-  //name = "mithun"
-  return `Hi from ${name}`;
-}
-
-// for (let i = 0; i < 10; i++) {
-//   let str = sayHi(prompt("Enter Your Name: "));
-//   console.log(str);
-// }
-
-// Calback Function
-
-function process(cbfunc, a) {
-  //af, 30
-  cbfunc(a+30);  //60
-  console.log("ended");
-}
-
-// function printSqr(num) {
-//   console.log(num * num);
-// }
-
-process((num) => {
-  console.log(num*num);
-}, 30);
+console.log(arr);
+console.log(arr1);
