@@ -149,9 +149,29 @@ includes(val)---> returns a boolean value.
 indexOf(val)---> returns index value
 
 
-map--->
-filter--->
-reduce---->
+map---> transform each items and returns new array.
+syntax
+-------
+arr.map((item,ind)=>{
+    return val
+})
+
+filter--->  returns a new array with filtered values.
+
+[324432,234,3,132,56]
+[324432,234,132,56]
+
+syntax
+-------
+arr.filter((item,ind)=>{
+    return condition;
+})
+
+reduce----> single value.
+syntax 
+-------
+
+arr.reduce((acc,item,ind)=>{},initial value of acc)
 
 
 Operations in JS.
