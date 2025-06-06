@@ -138,7 +138,6 @@ used to store multiple values in single variable.
 5)splice(start, delete count, elem1, elem2....)
 6)sort()---> asc or desc arrangement.
 7)reverse()---> reversing the array.
-8)indexOf(val)---> returns index value
 
 
 Methods That doesnot
@@ -147,6 +146,8 @@ concat()---> arr1.concat(arr2)
 slice(art, end)---> extracts part of array.
 join()--->string of array elements.
 includes(val)---> returns a boolean value.
+indexOf(val)---> returns index value
+
 
 map--->
 filter--->
