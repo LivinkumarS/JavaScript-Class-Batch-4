@@ -1,23 +1,34 @@
-let arr = [
-  () => {
-    console.log("Hello world!");
+// Objects
+
+let obj = {
+  fName: "Livin",
+  lName: "kumar",
+  age: 88,
+  canVote: true,
+  printName() {
+    console.log(
+      `Hi my name is ${this.fName}${this.lName}. I am ${this.age} years old!`
+    );
   },
+  list:[1,2,3,4,5]
+};
 
-  1,
-  2,
-  3,
-  4,
-  [
-    "apple",
-    "banana",
-    "cherry",
-    () => {
-      console.log("Hi from inner array");
-    },
+// console.log(obj.age);
+// console.log(obj["canVote"]);
 
-    [33, 34, 35, 36, 37, 38, 39, 40, ["hi", "there"]],
-  ],
-];
+// obj.printName();
 
-// console.log(arr[5][1]);
-arr[5][3]();
+// console.log(Object.values(obj));
+// console.log(Object.keys(obj));
+
+// JSON---> JS Object Notification.
+
+let jsonValue=JSON.stringify(obj);
+
+// console.log(JSON.parse(jsonValue));
+
+
+console.log(obj["list"][4]);
+
+
+
