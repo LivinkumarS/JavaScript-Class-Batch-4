@@ -347,3 +347,14 @@ undefined,
 NaN
 
 
+
+Destructuring
+-------------
+lets you extract values from arrays and objects.
+let arr = [243, 234, 35];
+let { fName, lNAme, list } = obj;
+
+
+Spread (...)
+-------
+used to spread(expand) elements from arrays or obj.
