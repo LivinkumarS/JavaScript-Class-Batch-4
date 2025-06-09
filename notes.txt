@@ -171,7 +171,38 @@ reduce----> single value.
 syntax 
 -------
 
-arr.reduce((acc,item,ind)=>{},initial value of acc)
+arr.reduce((acc,item,ind)=>{},initial value of acc).
+
+
+Objects
+----------
+it is a collection of key-value pairs.
+
+keys are string.
+values can be any datatype.
+
+syntax:
+---------
+
+{
+    key1:vaule,
+    key2:value,
+    .
+    .
+    .
+}
+
+accessing values
+----------------
+. ---> obj.key
+[] ---> obj["key"] 
+
+Methods of Objects
+-------------------
+
+Object.keys(objName)--> return an array that holds the keys of that obj.
+
+Object.values(objName)--> return an array that holds the values of that obj.
 
 
 Operations in JS.
@@ -286,6 +317,13 @@ do... while loop
  for..in and for...of 
  ------------------------
 
+ for.. of 
+ --------
+ used to loop over values of an iterable.(arrays and string)
+
+for ...in 
+------------
+over the keys in an object. (obj)
 
 
 Truthy and Falsy Values 
