@@ -1,8 +1,24 @@
-// let h1 = document.getElementById("head");
-// let h1 = document.getElementsByClassName("head");
-// let h1 = document.getElementsByTagName("h1");
+// let h1 = document.querySelector("h1");
+// // console.log(h1.textContent);
+// // h1.textContent = "Vanakkam";
+// let body = document.querySelector("body");
 
+// h1.innerHTML = "<span>Vanakkam</span>";
 
-// let h1 =document.querySelector("h2")
-let h1 =document.querySelectorAll("h1")
-console.log(h1);
+// // console.log(h1.innerHTML);
+
+// const anc = document.querySelector("a");
+
+// console.log(anc.getAttribute("href"));
+// console.log(anc.getAttribute("href"));
+
+// anc.setAttribute("href", "https://google.com");
+// anc.setAttribute("id", "https");
+// anc.removeAttribute("id");
+
+let h1 = document.querySelector("#head1");
+
+// console.log(h1.classList);
+// h1.classList.add("rose");
+// h1.classList.remove("rose");
+h1.classList.toggle("rose");

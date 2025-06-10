@@ -16,3 +16,20 @@ DOM Manipulation
 
 querySelector()--> selecting a single element by queries.
 querySelectorAll()--> selecting a collection of elements by queries.
+
+Manipulating Contents.
+------------------------
+textContent----> accessing and modifying the text inside an elemnt.
+innerHTML---> accessing and modifying the HTML structure inside an elemnt.
+
+Manipulating the Attributes
+-------------------------------
+getAttribute("href")
+setAttribute("href","value")
+removeAttribute("href")
+
+Class Manipulation 
+----------------------
+classList.add("className")
+classList.remove("className")
+classList.toggle("className")
