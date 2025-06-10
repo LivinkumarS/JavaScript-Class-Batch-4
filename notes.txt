@@ -205,6 +205,13 @@ Object.keys(objName)--> return an array that holds the keys of that obj.
 Object.values(objName)--> return an array that holds the values of that obj.
 
 
+NaN(Not a Number)
+-------------------
+it occurs when something went wrong trying to perform numeric operations.
+
+
+
+
 Operations in JS.
 -------------------
 
