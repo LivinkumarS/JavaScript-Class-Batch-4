@@ -33,3 +33,13 @@ Class Manipulation
 classList.add("className")
 classList.remove("className")
 classList.toggle("className")
+
+DOM tree navigation
+---------------------
+.children---->returns all the child elements
+.firstElementChild---->returns the first child element
+.lastElementChild---->returns the last child element
+
+.parentElement---> returns parent element.
+.nextElementSibling---> returns the next sibling
+.previousElementSibling---> returns the previous sibling

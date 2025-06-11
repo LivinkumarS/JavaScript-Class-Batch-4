@@ -1,6 +1,11 @@
-let height = prompt("Your Height in CM");
-let weight = prompt("Ypur weight in KG");
+const ul = document.querySelector("ul");
 
-// "less weight"--> <18 (bg: red)
-// "correct weight"---> 18-25 (bg: green)
-// "over weight" ---> >25 (bg: red)
+// console.log(ul.children);
+// console.log(ul.firstElementChild);
+// console.log(ul.lastElementChild);
+
+// console.log(ul.parentElement.children);
+// console.log(ul.lastElementChild.previousElementSibling);
+
+
+console.log(ul.firstElementChild.nextElementSibling.nextElementSibling);
