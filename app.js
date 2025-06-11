@@ -1,11 +1,20 @@
-const ul = document.querySelector("ul");
+// let h1 = document.querySelector("h1");
 
-// console.log(ul.children);
-// console.log(ul.firstElementChild);
-// console.log(ul.lastElementChild);
+// h1.style.backgroundColor = "red";
+// h1.style.color = "blue";
+// h1.style.fontSize = "50px";
+// h1.style.fontWeight = "900";
 
-// console.log(ul.parentElement.children);
-// console.log(ul.lastElementChild.previousElementSibling);
+let newElement = document.createElement("a");
 
+newElement.setAttribute("href", "https://www.thestackly.com");
+newElement.textContent = "Go To Our Website";
 
-console.log(ul.firstElementChild.nextElementSibling.nextElementSibling);
+let li = document.createElement("li");
+li.appendChild(newElement);
+let ul = document.querySelector("ul");
+
+ul.insertBefore(li, ul.firstElementChild.nextElementSibling.nextElementSibling);
+
+li.remove();
+ul.remove();

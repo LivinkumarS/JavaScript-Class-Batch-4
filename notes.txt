@@ -43,3 +43,22 @@ DOM tree navigation
 .parentElement---> returns parent element.
 .nextElementSibling---> returns the next sibling
 .previousElementSibling---> returns the previous sibling
+
+Style Manipulation
+--------------------
+element.style.propertyName="value";
+
+
+Creating and Inserting an element
+-----------------------------------
+
+create---> createElement("tag name");
+
+appendChild---> adding an element as last child.
+prepand---> adding an element as first child.
+
+insertBefore----> parent.insertBefore(element,  ref)
+
+Removing an element 
+--------------------
+element.remove()
