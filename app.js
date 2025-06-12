@@ -1,20 +1,19 @@
-// let h1 = document.querySelector("h1");
+const btn = document.getElementsByTagName("button");
+const ul = document.querySelector("ul");
+const inp = document.querySelector("input");
 
-// h1.style.backgroundColor = "red";
-// h1.style.color = "blue";
-// h1.style.fontSize = "50px";
-// h1.style.fontWeight = "900";
+function printHi(e) {
+  console.log(e.target);
+}
 
-let newElement = document.createElement("a");
+// inp.addEventListener("click",printHi)
 
-newElement.setAttribute("href", "https://www.thestackly.com");
-newElement.textContent = "Go To Our Website";
+// Array.from(btn).forEach((item, ind) => {
+//   item.addEventListener("click", printHi);
+// });
 
-let li = document.createElement("li");
-li.appendChild(newElement);
-let ul = document.querySelector("ul");
-
-ul.insertBefore(li, ul.firstElementChild.nextElementSibling.nextElementSibling);
-
-li.remove();
-ul.remove();
+// for (let i = 0; i < btn.length; i++) {
+//   btn[i].addEventListener("click", (event) => {
+//     console.log(event.target);
+//   });
+// }

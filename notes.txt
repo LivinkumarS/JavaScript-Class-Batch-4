@@ -62,3 +62,22 @@ insertBefore----> parent.insertBefore(element,  ref)
 Removing an element 
 --------------------
 element.remove()
+
+Event Listeners.
+-------------------
+
+an event Listener is a procedure in js that waits for an event to occur and execute the cb function.
+
+events 
+---------
+click---> mouse click,
+mouseover---> mouse enters an element
+keydown---> key is pressed
+input---> input value changes
+submit---> form sbmission
+change---> input value changes
+
+
+element.addEventListener('event name', cbfunction)
+
+Inline event listener--->
