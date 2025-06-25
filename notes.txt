@@ -1,83 +1,25 @@
-DOM 
--------
-(Document Object Model).
-
-Tree-like structure representing the HTML elements on a webpage
-
-html--> head-->meta,meta,title,style 
-        body---> div.parent ---> div.child--->h1--->span
-                 script          div.child--->h1--->span
-
-DOM Manipulation
-------------------
-1) getElementById("Id name")---> Selecting an element by it's ID name.
-2) getElementsByClassName("class name")-->Selecting an elements by it's class name.(node list).
-3)getElementsByTagName("tag name")-->returns a node list.
-
-querySelector()--> selecting a single element by queries.
-querySelectorAll()--> selecting a collection of elements by queries.
-
-Manipulating Contents.
-------------------------
-textContent----> accessing and modifying the text inside an elemnt.
-innerHTML---> accessing and modifying the HTML structure inside an elemnt.
-
-Manipulating the Attributes
--------------------------------
-getAttribute("href")
-setAttribute("href","value")
-removeAttribute("href")
-
-Class Manipulation 
-----------------------
-classList.add("className")
-classList.remove("className")
-classList.toggle("className")
-
-DOM tree navigation
----------------------
-.children---->returns all the child elements
-.firstElementChild---->returns the first child element
-.lastElementChild---->returns the last child element
-
-.parentElement---> returns parent element.
-.nextElementSibling---> returns the next sibling
-.previousElementSibling---> returns the previous sibling
-
-Style Manipulation
---------------------
-element.style.propertyName="value";
-
-
-Creating and Inserting an element
------------------------------------
-
-create---> createElement("tag name");
-
-appendChild---> adding an element as last child.
-prepand---> adding an element as first child.
-
-insertBefore----> parent.insertBefore(element,  ref)
-
-Removing an element 
---------------------
-element.remove()
-
-Event Listeners.
--------------------
-
-an event Listener is a procedure in js that waits for an event to occur and execute the cb function.
-
-events 
+React
 ---------
-click---> mouse click,
-mouseover---> mouse enters an element
-keydown---> key is pressed
-input---> input value changes
-submit---> form sbmission
-change---> input value changes
+React is JS library developed by Facebook for building UI, especially SPA(Single Page Application).
 
+Key Features 
+--------------
+Component-Based:  UI is split into independent piece.
+Efficient Rendering: Uses Virtual DOM for fast updates.
+Re-usable Code: write once, use everywhere.
 
-element.addEventListener('event name', cbfunction)
+Node---> Runtime for JS.
+NPM---> Node Package Manager.
 
-Inline event listener--->
+changing terminal location
+-----------------------------
+cd "address"
+
+Installing packages from NPM 
+-------------------------------
+>npm install "packages's name"
+
+Creating new react application.
+-----------------------------------
+>npm create vite@latest
+>npm install 
