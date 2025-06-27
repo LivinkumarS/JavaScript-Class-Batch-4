@@ -1,3 +1,8 @@
+Import/Export
+----------------
+1)Defult--> supports only one file. (import DefultData from "./vijay.js"). (you can use any name you want).
+2)normal---> as an object
+
 React
 ---------
 React is JS library developed by Facebook for building UI, especially SPA(Single Page Application).
@@ -23,3 +28,28 @@ Creating new react application.
 -----------------------------------
 >npm create vite@latest
 >npm install 
+
+Run React Application
+------------------------
+npm run dev
+
+JSX---> JavaScript XML
+------------------------
+it allows you to write HTML-like code inside JavaScript.
+
+rules of JSX 
+--------------
+HTML into JS---> ()
+JS into HTML---> {}
+attributes should be in camel case (onClick,onSubmit).(class X---> className)
+functional component can return only one parent element.
+
+JSX---> to create components.
+types
+-----
+1)functional components(mostly used, recommended).
+2)class componants(rarely used)
+
+Functional Component.
+---------------------
+it is a JS function---> it is going to return a HTNL element.
