@@ -53,3 +53,26 @@ types
 Functional Component.
 ---------------------
 it is a JS function---> it is going to return a HTNL element.
+
+Props
+-----
+arguments passed inside a component.
+
+State
+-------
+state is a special react object used to store dynamic data in a component.
+when state changes, React re-renders the component to reflect the updated data.
+
+Conditional Rendering 
+------------------------
+It is used to show or hide an element based on a condition.
+
+And---> condition && (element)
+Ternary Operator---> condition ? (element1) : (element2)
+
+Hooks
+-------
+useState--->create and update a state in a component.
+syntax
+-------
+const [name,setName]=useState(initVal)

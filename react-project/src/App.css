@@ -11,19 +11,6 @@
     border: 1px solid gray;
     border-radius: 20px;
     padding: 20px;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    gap: 20px;
 }
 
-.card>img{
-    width: 200px;
-    aspect-ratio: 2/3;
-}
-
-.card>.text{
-    padding: 10px;
-    flex: 1;
-}
 
