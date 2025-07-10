@@ -76,3 +76,23 @@ useState--->create and update a state in a component.
 syntax
 -------
 const [name,setName]=useState(initVal)
+
+
+Event handling in React 
+------------------------
+click, change, submit, mouseOver....
+
+you should use only inline event Listeners.
+>> should only mention the function name
+
+Controlled Inputs
+------------------
+>>> enabling react engine to control the inputs.
+  const [name, setName] = useState("");
+  <input
+          type="text"
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+    />

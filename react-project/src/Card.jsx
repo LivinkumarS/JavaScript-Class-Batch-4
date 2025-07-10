@@ -1,30 +1,59 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function Card() {
-  const [number, setNumber] = useState(1);
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState('');
 
-  // prev+1---->new
+  // const [formData,setFormData]=useState({
+  //   name:"",
+  //   phone:""
+  // })
 
-  function add() {
-    setNumber((prev) => {
-      return prev + 1;
-    });
-  }
-  function reduce() {
-    setNumber((prev) => {
-      if (prev == 1) {
-        return prev;
-      }
-      return prev - 1;
-    });
+  // function updateName(e){
+  //   setName(e.target.value)
+  // }
+
+  // function clearName(){
+  //   setName("")
+  // }
+  // console.log(name);
+
+  function handleSubmit(e){
+    e.preventDefault()
+    console.log(`Name: ${name}`);
+    console.log(`Phone: ${phone}`);
+    
   }
 
   return (
-    <div className="card">
-      <h1>Number: {number}</h1>
-      <button onClick={add}>Add Button</button> <br />
-      <button onClick={reduce}>Reduce Button</button>
-      <h2>{number % 2 == 0 ? "Even number" : "Odd number"}</h2>
+    <div>
+      {/* <button
+        onClick={() => {
+          console.log("Hello Vijay");
+        }}
+      >
+        Click me
+      </button> */}
+
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+        />
+
+        <input
+          type="number"
+          value={phone}
+          onChange={(e) => {
+            setPhone(e.target.value);
+          }}
+        />
+
+        <input type="submit" />
+      </form>
     </div>
   );
 }
