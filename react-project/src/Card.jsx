@@ -1,59 +1,47 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Card() {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState('');
+  const [number, setNumber] = useState(0);
+  const [number2,setNumber2]=useState(0)
 
-  // const [formData,setFormData]=useState({
-  //   name:"",
-  //   phone:""
-  // })
-
-  // function updateName(e){
-  //   setName(e.target.value)
+  // function func1() {
+  //   console.log("From UseEffect!");
   // }
 
-  // function clearName(){
-  //   setName("")
-  // }
-  // console.log(name);
+  useEffect(() => {
+    console.log("From Empty UseEffect!");
+  });
 
-  function handleSubmit(e){
-    e.preventDefault()
-    console.log(`Name: ${name}`);
-    console.log(`Phone: ${phone}`);
-    
-  }
+  useEffect(() => {
+    console.log("From square bracket side Effect!");
+  }, []);
+
+  useEffect(() => {
+    console.log("From square bracket side Effect with state!");
+  }, [number2]);
 
   return (
     <div>
-      {/* <button
+      <h1>Number: {number}</h1>
+      <button
         onClick={() => {
-          console.log("Hello Vijay");
+          setNumber((prev) => {
+            return prev + 1;
+          });
         }}
       >
-        Click me
-      </button> */}
-
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => {
-            setName(e.target.value);
-          }}
-        />
-
-        <input
-          type="number"
-          value={phone}
-          onChange={(e) => {
-            setPhone(e.target.value);
-          }}
-        />
-
-        <input type="submit" />
-      </form>
+        Click
+      </button>
+      <h1>Number2: {number2}</h1>
+      <button
+        onClick={() => {
+          setNumber2((prev) => {
+            return prev + 1;
+          });
+        }}
+      >
+        Click
+      </button>
     </div>
   );
 }

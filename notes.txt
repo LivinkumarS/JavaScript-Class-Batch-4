@@ -96,3 +96,21 @@ Controlled Inputs
             setName(e.target.value);
           }}
     />
+
+
+UseEffect
+------------
+used to run side effectin a functional component.
+
+render--->  displays the UI based on the component.
+mounting---> rendering at the first time..
+re-rendering---> runs again to update UI because of a change in state, props...
+
+syntax
+------
+useEffect(function)----> on every renders(mount, re-renders)
+useEffect(function,[])----> on mount
+useEffect(function,[state])----> on mount, re-render due to the change in specified state
+
+
+post id--->
