@@ -113,4 +113,12 @@ useEffect(function,[])----> on mount
 useEffect(function,[state])----> on mount, re-render due to the change in specified state
 
 
-post id--->
+List Rendering 
+----------------
+when you have a list of items.. to render them on UI we can use list rendering.
+
+using map method...
+
+listItems.map((item,ind)=>{
+        return (<p key={ind}>{item}</p>)
+      })

@@ -1,47 +1,51 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import Actor from "./Actor";
 
 export default function Card() {
-  const [number, setNumber] = useState(0);
-  const [number2,setNumber2]=useState(0)
+  const [name, setName] = useState("");
+  const [age, setAge] = useState("");
 
-  // function func1() {
-  //   console.log("From UseEffect!");
-  // }
+  const [listItems, setListItems] = useState([
+  ]);
 
-  useEffect(() => {
-    console.log("From Empty UseEffect!");
-  });
+  function handleSubmit(e) {
+    e.preventDefault()
+    setListItems((prev) => {
+      prev.push({ name: name, age: age });
+      return prev;
+    });
 
-  useEffect(() => {
-    console.log("From square bracket side Effect!");
-  }, []);
-
-  useEffect(() => {
-    console.log("From square bracket side Effect with state!");
-  }, [number2]);
+    setAge("");
+    setName("");
+  }
 
   return (
     <div>
-      <h1>Number: {number}</h1>
-      <button
-        onClick={() => {
-          setNumber((prev) => {
-            return prev + 1;
-          });
-        }}
-      >
-        Click
-      </button>
-      <h1>Number2: {number2}</h1>
-      <button
-        onClick={() => {
-          setNumber2((prev) => {
-            return prev + 1;
-          });
-        }}
-      >
-        Click
-      </button>
+      <h1>Actors</h1>
+
+      {listItems.map((item, ind) => {
+        return <Actor key={ind} name={item.name} age={item.age} />;
+      })}
+
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+          placeholder="name"
+        />
+        <input
+          type="number"
+          value={age}
+          onChange={(e) => {
+            setAge(e.target.value);
+          }}
+          placeholder="age"
+        />
+        <input type="submit" name="" id="" />
+      </form>
     </div>
   );
 }
