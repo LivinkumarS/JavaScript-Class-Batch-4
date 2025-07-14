@@ -122,3 +122,24 @@ using map method...
 listItems.map((item,ind)=>{
         return (<p key={ind}>{item}</p>)
       })
+
+React Router DOM
+-------------------
+
+Routing In SPA like React.
+
+Install React-router-dom
+
+step2: <BrowserRouter>
+    <App />
+  </BrowserRouter>
+
+step3:<Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="/contact" element={<Contact/>}/>
+    </Routes>
+
+to create link for the routes 
+--------------------------------
+using Link tag from react-router-dom
