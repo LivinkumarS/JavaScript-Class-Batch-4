@@ -12,7 +12,7 @@ export default function Actor(prop) {
         {prop.age}
       </h2>
 
-      <button>Delete</button>
+      <button onClick={()=>{prop.deleteFunc(prop.index)}}>Delete</button>
     </div>
   );
 }

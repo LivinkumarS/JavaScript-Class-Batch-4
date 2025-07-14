@@ -5,8 +5,22 @@ export default function Card() {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
 
+ 
+
   const [listItems, setListItems] = useState([
   ]);
+
+
+   const deleteItem=(itemInd)=>{
+
+    setListItems((prev)=>{
+      return prev.filter((item,ind)=>{
+        return itemInd!==ind
+      })
+    })
+
+  }
+
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -24,7 +38,7 @@ export default function Card() {
       <h1>Actors</h1>
 
       {listItems.map((item, ind) => {
-        return <Actor key={ind} name={item.name} age={item.age} />;
+        return <Actor index={ind} deleteFunc={deleteItem} key={ind} name={item.name} age={item.age} />;
       })}
 
       <form onSubmit={handleSubmit}>
@@ -46,6 +60,7 @@ export default function Card() {
         />
         <input type="submit" name="" id="" />
       </form>
+
     </div>
   );
 }
