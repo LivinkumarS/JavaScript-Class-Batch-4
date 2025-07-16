@@ -112,6 +112,10 @@ useEffect(function)----> on every renders(mount, re-renders)
 useEffect(function,[])----> on mount
 useEffect(function,[state])----> on mount, re-render due to the change in specified state
 
+UseContext 
+------------
+used to pass the state to all the descendant components without Property Drillig.
+
 
 List Rendering 
 ----------------
@@ -142,4 +146,6 @@ step3:<Routes>
 
 to create link for the routes 
 --------------------------------
-using Link tag from react-router-dom
+using Link tag from react-router-dom.
+
+

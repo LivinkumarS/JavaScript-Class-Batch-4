@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import GrandChild from './GrandChild'
+import { NumberContext } from '../App';
 
-export default function Child(prop) {
+export default function Child() {
+    const number = useContext(NumberContext);
   return (
-   <div>
-     <h2>From child Tag, The message is: {prop.message}</h2>
-     <hr />
-     <GrandChild message={prop.message}/>
-   </div>
+    <div><h2>Child: {number}</h2>
+      <hr />
+      <GrandChild /></div>
   )
 }

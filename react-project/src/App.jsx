@@ -1,24 +1,29 @@
-import React, { useState } from "react";
-import "./App.css";
+import React, { createContext, useState } from "react";
 import Child from "./component/Child";
 
+const NumberContext = createContext();
+
 export default function App() {
-  const [message, setMessage] = useState(1);
+  const [number, setNumber] = useState(0);
 
   return (
     <div>
       <button
         onClick={() => {
-          setMessage((pre) => {
+          setNumber((pre) => {
             return ++pre;
           });
         }}
-      >
-        Click
-      </button>
-      <h1>From App Component The message is: {message}</h1>
+      >Add</button>
+
+      <h1>App</h1>
       <hr />
-      <Child message={message} />
+
+      <NumberContext.Provider value={number}>
+        <Child />
+      </NumberContext.Provider>
     </div>
   );
 }
+
+export { NumberContext };

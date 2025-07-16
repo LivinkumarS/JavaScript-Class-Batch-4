@@ -1,5 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { NumberContext } from "../App";
 
-export default function GrandChild(prop) {
-  return <h3>From GrandChild, the message is: {prop.message}</h3>;
+export default function GrandChild() {
+  const number = useContext(NumberContext);
+
+  return (
+    <div>
+      <h3>GrandChild: {number}</h3>
+    </div>
+  );
 }
