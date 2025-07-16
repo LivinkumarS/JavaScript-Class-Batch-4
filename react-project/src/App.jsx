@@ -1,29 +1,18 @@
-import React, { createContext, useState } from "react";
-import Child from "./component/Child";
-
-const NumberContext = createContext();
+import React, { useState } from "react";
+import Sib1 from "./component/Sib1";
+import Sib2 from "./component/Sib2";
 
 export default function App() {
-  const [number, setNumber] = useState(0);
+
+
+    const [number, setNumber] = useState(10);
 
   return (
     <div>
-      <button
-        onClick={() => {
-          setNumber((pre) => {
-            return ++pre;
-          });
-        }}
-      >Add</button>
-
-      <h1>App</h1>
+      App
       <hr />
-
-      <NumberContext.Provider value={number}>
-        <Child />
-      </NumberContext.Provider>
+      <Sib1 number={number}/>
+      <Sib2 number={number}/>
     </div>
   );
 }
-
-export { NumberContext };

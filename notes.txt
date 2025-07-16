@@ -149,3 +149,11 @@ to create link for the routes
 using Link tag from react-router-dom.
 
 
+To pass a state from a parent to it's descendant(lower order components):
+
+1) Property Drilling.
+2)useContext Hook.
+
+To shara a single state between to sibling components:
+
+1) Lifting State Up
