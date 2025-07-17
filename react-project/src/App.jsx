@@ -1,18 +1,38 @@
-import React, { useState } from "react";
-import Sib1 from "./component/Sib1";
-import Sib2 from "./component/Sib2";
+import React, { useEffect, useRef, useState } from "react";
 
 export default function App() {
+  // const inputRef = useRef();
 
+  const numberRef = useRef(0);
+  const [number, setNumber] = useState(0);
 
-    const [number, setNumber] = useState(10);
+  useEffect(() => {
+    console.log("Rendered again!");
+  });
+
+  // const focusInp = () => {
+  //   inputRef.current.focus();
+  // };
 
   return (
     <div>
-      App
-      <hr />
-      <Sib1 number={number}/>
-      <Sib2 number={number}/>
+      <button
+        onClick={() => {
+          setNumber((pre) => ++pre);
+        }}
+      >
+        Change State
+      </button>
+      <button
+        onClick={() => {
+          numberRef.current++;
+        }}
+      >
+        Change Ref
+      </button>
+
+      <h1>{number}</h1>
+      <h1>{numberRef.current}</h1>
     </div>
   );
 }

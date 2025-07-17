@@ -8,9 +8,13 @@
   <body>
     <button onclick="printHi(event)">Click</button>
 
+    <input type="text" />
+
     <script>
-      function printHi(e) {
-        console.log(e.target);
+      const inp = document.querySelector("input");
+
+      function printHi() {
+        inp.focus();
       }
     </script>
   </body>

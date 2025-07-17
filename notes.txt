@@ -116,6 +116,11 @@ UseContext
 ------------
 used to pass the state to all the descendant components without Property Drillig.
 
+UseRef
+------
+1) To access and control the DOM Elements.
+2) Storing Values without Re-render.
+
 
 List Rendering 
 ----------------
